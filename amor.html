@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Envelope + Letter (Open/Close on Click)</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="envelope-wrapper flap">
+      <div class="envelope">
+        <div class="letter">
+          <div class="text">
+            <strong>Querido Branquelo</strong>
+            <p>
+              Obrigada por me fazer sentir amada da forma mais pura 
+              que eu mereço, mesmo quando eu não acreditava que 
+              poderia viver algo tão intenso. Por me mostrar seu amor 
+              todos os dias, não só em palavras, mas no olhar, nos 
+              gestos e nas ações que transbordam admiração e 
+              carinho. Obrigada por me acompanhar em meus sonhos 
+              e me dar a segurança que preciso, por me fazer enxergar 
+              o amor de uma forma diferente, por me permitir ser 
+              exatamente quem sou e por me amar nos dias em que 
+              não me amo tanto. Por abraçar todas as minhas falhas e 
+              imperfeições e, ainda assim, permanecer. Por celebrar 
+              minhas conquistas com alegria e ser abrigo nas minhas lágrimas. 
+              Te encontrar foi a melhor coisa que me aconteceu, 
+              porque, de certa forma, me encontrei também. Você 
+              trouxe exatamente o que faltava para minha vida ser 
+              completa, e, depois de você, ela nunca mais foi a mesma. 
+              O que antes era eu, agora, para sempre, será nós.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="heart"></div>
+    </div>
+  </div>
+<script>
+  const envelope = document.querySelector('.envelope-wrapper');
+  envelope.addEventListener('click', () => {
+      envelope.classList.toggle('flap');
+});
+</script>
+</body>
+</html>
+
+
